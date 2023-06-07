@@ -1,5 +1,4 @@
 import React from "react"
-import logo from "../logo.png"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faBars} from "@fortawesome/free-solid-svg-icons"
 import {BrowserRouter, Route, Link } from "react-router-dom";
@@ -35,7 +34,7 @@ const Navbar = () => {
       </li>
       <li className="nav-item active">
         <Link to="/signup">
-          <a className="nav-link" href="#">Signup</a>
+          <a className="nav-link" href="#" style={{"text-decoration":"none"}}>Signup</a>
         </Link>
         
       </li>

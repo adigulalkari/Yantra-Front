@@ -8,6 +8,7 @@ import Signup from "./components/Signup";
 import Intro from "./components/Intro";
 import Landing from "./components/Intro";
 import Info from "./components/Info"
+import Chatbot from "./components/Chatbot"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/landing" element={<Landing/>}/>
           <Route path="/signup" element={<Signup/>}/>
           <Route path="/info" element={<Info/>}/>
+          <Route path="/chatbot" element={<Chatbot/>}/>
         {/* <Navbar/>
         <Header/>
         <Menu />

@@ -32,19 +32,20 @@ export default class Signup extends Component {
         return (
             <section>
   <div className="px-4 py-5 px-md-5 text-center text-lg-start" style={{"background-color": "#fff"}}>
-    <div className="container" style={{"padding-top": "5rem"}}>
+    <div className="container" >
       <div className="row gx-lg-5 align-items-center">
         <div className="col-lg-6 mb-5 mb-lg-0">
-          <h1 className="my-5 display-3 fw-bold ls-tight">
+          {/* <h1 className="my-5 display-3 fw-bold ls-tight">
             The best offer <br />
-            <span className="text-primary">for your business</span>
+            <span className="change-span" style={{"color":"#DAAC78"}}>for your business</span>
           </h1>
           <p style={{"color": "black"}}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Eveniet, itaque accusantium odio, soluta, corrupti aliquam
             quibusdam tempora at cupiditate quis eum maiores libero
             veritatis? Dicta facilis sint aliquid ipsum atque?
-          </p>
+          </p> */}
+          
         </div>
 
         <div className="col-lg-6 mb-5 mb-lg-0">
@@ -65,16 +66,63 @@ export default class Signup extends Component {
                     </div>
                   </div>
                 </div> */}
+                
+                <div className="row">
+                  <div className="col-md-6 mb-4">
+                    <div className="form-outline">
+                      <input type="text" id="form3Example1" className="form-control" />
+                      <label className="form-label" for="form3Example1">First name</label>
+                    </div>
+                  </div>
+                  <div className="col-md-6 mb-4">
+                    <div className="form-outline">
+                      <input type="text" id="form3Example2" className="form-control" />
+                      <label className="form-label" for="form3Example2">Last name</label>
+                    </div>
+                  </div>
+                </div>
 
                 <div className="form-outline mb-4">
                   <input type="email" id="form3Example3" className="form-control" />
-                  <label className="form-label" for="form3Example3">Username</label>
+                  <label className="form-label" for="form3Example3">Email address</label>
                 </div>
+
+                <div className="form-outline mb-4">
+                  <input type="password" id="form3Example4" className="form-control" />
+                  <label className="form-label" for="form3Example4">Mobile No.</label>
+                </div>
+
+                <div className="form-outline mb-4">
+                  <input type="password" id="form3Example4" className="form-control" />
+                  <label className="form-label" for="form3Example4">Age</label>
+                </div>
+
+                <div className="form-outline mb-4">
+                  <input type="password" id="form3Example4" className="form-control" />
+                  <label className="form-label" for="form3Example4">Location</label>
+                </div>
+
+                <div className="form-outline mb-4">
+                  <input type="email" id="form3Example3" className="form-control" />
+                  <label className="form-label" for="form3Example3">Hobbies</label>
+                </div>
+
+                <div className="form-outline mb-4">
+                  <input type="password" id="form3Example4" className="form-control" />
+                  <label className="form-label" for="form3Example4">Interests</label>
+                </div>
+
+                <div className="form-outline mb-4">
+                  <input type="password" id="form3Example4" className="form-control" />
+                  <label className="form-label" for="form3Example4">Health Vulnerabilities</label>
+                </div>
+
 
                 <div className="form-outline mb-4">
                   <input type="password" id="form3Example4" className="form-control" />
                   <label className="form-label" for="form3Example4">Password</label>
                 </div>
+                
 
                 {/* <div className="form-check d-flex justify-content-center mb-4">
                   <input className="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
@@ -83,8 +131,8 @@ export default class Signup extends Component {
                   </label>
                 </div> */}
 
-                <button type="submit" className="btn btn-primary btn-block mb-4" style={{"padding-left":"4rem;"}}>
-                  Sign up
+                <button type="submit" className="btn  btn-block mb-4" style={{"padding-left":"4rem;background-color:#DAAC78"}}>
+                Sign up
                 </button>
 
                 <div className="text-center">
