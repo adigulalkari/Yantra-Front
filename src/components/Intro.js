@@ -7,13 +7,13 @@ const Intro=()=>{
     return (
         <section>
             <Navbar/>
-  <div className="px-4 py-5 px-md-5 text-center text-lg-start" style={{"background-color": "#fff"}}>
+  <div className="px-4 py-5 px-md-5 text-center text-lg-start" style={{"background": "8rem 60rem radial-gradient(50% 50% at 50% 50%, #DAAC79 0%, rgba(218, 172, 120, 0) 100%)"}}>
     <div className="container">
       <div className="row gx-lg-5 align-items-center">
         <div className="col-lg-6 mb-5 mb-lg-0">
           <h1 className="my-5 display-3 fw-bold ls-tight">
-            The best offer <br />
-            <span className="change-span" style={{"color":"#DAAC78"}}>for your business</span>
+            Elder-Link <br />
+            <span className="change-span" style={{"color":"#DAAC78"}}>for your well-being</span>
           </h1>
           <p style={{"color": "black"}}>
             

@@ -1,14 +1,17 @@
 import React from "react";
 import {Button, Alert, Row, Col} from 'react-bootstrap';
 import land1 from "../images/land1.png"
-import land2 from "../images/land2.png"
-import land3 from "../images/land3.png"
+import land22 from "../images/land22.png"
+import land33 from "../images/land33.png"
+import elderlink from "../images/elderlink-logo.png"
 import Navbar from "../components/Navbar"
+import {BrowserRouter, Route, Link } from "react-router-dom";
 
 const Intro=()=>{
     return (
-        <div classNameNameName="header-wraper">
-            <Navbar/>
+        <div className="header-wraper" style={{"background": "radial-gradient(50% 50% at 50% 50%, #DAAC78 0%, rgba(218, 172, 120, 0) 100%)"}}>
+
+            {/* <Navbar/> */}
     {/* <section classNameNameName="button-section">
         
             <div classNameNameName="req-order">
@@ -36,30 +39,19 @@ const Intro=()=>{
             
         </div>
     </section> */}
-    <div className="card-control">
+    {/* <img src={{elderlink}}/> */}
+    <div className="card-control" style={{"padding-top":"3rem"}}>
             <div className="card" style={{"width": "18rem"}}>
-  <img className="card-img-top" src={land1} alt="Card image cap"/>
-  <div className="card-body">
-    <h5 className="card-title">Group Making</h5>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" className="btn btn-primary">Go somewhere</a>
-  </div>
+  <img className="card-img-top" src={land1} alt="Card image cap" style={{"height":"40rem"}}/>
+
 </div>
 <div className="card" style={{"width": "18rem"}}>
-  <img className="card-img-top" src={land2} alt="Card image cap" style={{"height":"23.5rem"}}/>
-  <div className="card-body">
-    <h5 className="card-title">Distress Call</h5>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" className="btn btn-primary">Go somewhere</a>
-  </div>
+  <img className="card-img-top" src={land22} alt="Card image cap" style={{"height":"40rem"}}/>
+
 </div>
 <div className="card" style={{"width": "18rem"}}>
-  <img className="card-img-top" src={land3} alt="Card image cap"  style={{"height":"23.2rem"}}/>
-  <div className="card-body">
-    <h5 className="card-title">AI ChatBOT</h5>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" className="btn btn-primary">Go somewhere</a>
-  </div>
+  <img className="card-img-top" src={land33} alt="Card image cap"  style={{"height":"40rem"}}/>
+
 </div>
     </div>
     
