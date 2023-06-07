@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import Intro from "./components/Intro";
-import Landing from "./components/Intro";
+import Landing from "./components/Landing";
 import Info from "./components/Info"
 import Chatbot from "./components/Chatbot"
 
