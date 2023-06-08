@@ -9,18 +9,6 @@ import loginlogo from "../images/login-logo.png";
 import {BrowserRouter, Route, Link } from "react-router-dom";
 
 const Login=()=>{
-
-    const handleOnClick=()=>{
-        fetch('http://localhost:1000/api/users/login')
-        .then(response => response.json())
-        .then(data => {
-            if(data.status === 'success'){
-            console.log(data.data);
-            }
-        })
-      .catch(err => console.log(err));
-      
-      };
     
     const[usrnm,setUsrnm]=useState(0);
     const[psw,setPsw]=useState(0);
@@ -40,12 +28,12 @@ const Login=()=>{
             <div className="card-body py-5 px-md-5">
               <form>
               <div className="form-outline mb-4">
-                  <input onChange={(event)=>setUsrnm(event.target.value)} type="email" id="form3Example3" className="form-control" />
+                  <input type="email" id="form3Example3" className="form-control" />
                   <label className="form-label" for="form3Example3">Username</label>
                 </div>
 
                 <div className="form-outline mb-4">
-                  <input onChange={(event)=>setPsw(event.target.value)} type="password" id="form3Example4" className="form-control" />
+                  <input type="password" id="form3Example4" className="form-control" />
                   <label className="form-label" for="form3Example4">Password</label>
                 </div>
 
@@ -56,13 +44,14 @@ const Login=()=>{
                   </label> */}
                 </div>
                   <Link to="/landing">
-                  <button onClick={handleOnClick}  type="submit" className="btn btn-block mb-4" style={{"color":"#DAAC78"}}>
+                  <button type="submit" className="btn btn-block mb-4" style={{"color":"#DAAC78"}}>
                  Log In
                 </button>
                   </Link>
                 
 
                 <div className="text-center">
+                  {/* <p>or sign up with:</p> */}
                   <button type="button" className="btn btn-link btn-floating mx-1">
                     <i className="fab fa-facebook-f"></i>
                   </button>
