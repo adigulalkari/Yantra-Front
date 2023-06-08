@@ -1,7 +1,8 @@
 import React from "react";
 import Navbar from "../components/Navbar"
 
-const Header=()=>{
+
+const Chatbot=()=>{
     
     const { Configuration, OpenAIApi } = require("openai");
 
@@ -21,17 +22,19 @@ const Header=()=>{
       }
 
     return (
-        <div className="header-wraper">
-            <Navbar/>
-            <div className="main-info">
-                <h1>Elderly people Help</h1>
-                <a href="#" className="btn-main-offer" style={{"text-decoration":"none"}}>Contact</a>
+            <div className="header-wraper" style={{"background": "radial-gradient(50% 50% at 50% 50%, #DAAC78 0%, rgba(218, 172, 120, 0) 100%)"}}>
+            <div className="card-control" style={{"padding-top":"3rem"}}>
+            {/* <img className="card-img-top" src={land1} alt="Card image cap" style={{"height":"40rem"}}/> */}
+            <input id="text-desired1" type="text" style={{"height":"5rem"}}/>
+            <button onSubmit={generateChatResponse(document.querySelector('input').value)}/>
             </div>
-        </div>
+            {/* <img className="card-img-top" src={land22} alt="Card image cap" style={{"height":"40rem"}}/> */}
+            </div>
+            
     );
 }
 
-export default Header
+export default Chatbot
 
 
-generateChatResponse(msg);
+// generateChatResponse(msg);

@@ -13,36 +13,26 @@ const Navbar = () => {
   </button>
 
   <div className="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul className="navbar-nav ml-auto">
-      {/* <li className="nav-item active">
+    <ul className="navbar-nav mr-auto">
+      <li className="nav-item active">
         <a className="nav-link" href="#">Home</a>
       </li>
       <li className="nav-item active">
-        <a className="nav-link" href="#">About me</a>
+        <a className="nav-link" href="#">About Us</a>
       </li>
       <li className="nav-item active">
         <a className="nav-link" href="#">Services</a>
       </li>
       <li className="nav-item active">
         <a className="nav-link" href="#">How work</a>
-      </li> */}
-      <li className="nav-item active">
-        <Link to="/login">
-          <a className="nav-link" href="#">Login</a>
-        </Link>
-        
       </li>
       <li className="nav-item active">
-        <Link to="/signup">
-          <a className="nav-link" href="#" style={{"text-decoration":"none"}}>Signup</a>
-        </Link>
         
       </li>
     </ul>
     
   </div>
   </div>
-  
 </nav>
   )
 }
