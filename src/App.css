@@ -94,3 +94,22 @@ nav ul li{
   color:#000;
   margin:2rem;
 }
+
+.newfriend{
+  display: flex;
+  flex-direction: row;
+  /* padding-top: 4rem; */
+  border:1px solid black;
+  border-radius:0.4rem ;
+}
+
+
+.newfriend p{
+  padding-right: 50rem;
+  padding-top: 0.01rem;
+}
+
+
+.newfriend button{
+  background: #DAAC78;
+}

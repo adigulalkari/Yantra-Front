@@ -11,6 +11,10 @@ import Info from "./components/Info"
 import Chatbot from "./components/Chatbot"
 import Inter2 from "./components/Inter2"
 import Inter1 from "./components/Inter1"
+import Addfriend from "./components/Addfriend"
+import Respondrequest from "./components/Respondrequest"
+import Allonfriend from './components/Allonfriend';
+import Distress from "./components/Distress";
 
 function App() {
   return (
@@ -25,6 +29,10 @@ function App() {
           <Route path="/chatbot" element={<Chatbot/>}/>
           <Route path="/inter2" element={<Inter2/>}/>
           <Route path="/inter1" element={<Inter1/>}/>
+          <Route path="/addfriend" element={<Addfriend/>}/>
+          <Route path="/respondrequest" element={<Respondrequest/>}/>
+          <Route path="/allonfriend" element={<Allonfriend/>}/>
+          <Route path="/distress" element={<Distress/>}/>
         {/* <Navbar/>
         <Header/>
         <Menu />

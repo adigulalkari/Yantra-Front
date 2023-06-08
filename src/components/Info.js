@@ -1,8 +1,5 @@
 // import React from "react";
 // import {Button, Alert, Row, Col} from 'react-bootstrap';
-// import LeftSide from "../components/Leftside";
-// import Menu from "../components/Menu";
-// import RightSide from "../components/Rightside";
 import Navbar from "../components/Navbar"
 import React from "react";
 
