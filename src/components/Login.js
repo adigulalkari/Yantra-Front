@@ -5,15 +5,18 @@
 // import RightSide from "../components/Rightside";
 import Navbar from "../components/Navbar"
 import React from "react";
+import loginlogo from "../images/login-logo.png";
+import {BrowserRouter, Route, Link } from "react-router-dom";
 
 const Login=()=>{
     return (
-<section>
-  <div className="px-4 py-5 px-md-5 text-center text-lg-start">
+<section style={{"padding-top":"3rem"}}>
+  <div className="px-4 py-5 px-md-5 text-center text-lg-start" style={{"background": "40rem 0rem radial-gradient(50% 50% at 50% 50%, #DAAC79 0%, rgba(218, 172, 120, 0) 100%)"}}>
     <div className="container">
       <div className="row gx-lg-5 align-items-center">
         <div className="col-lg-6 mb-5 mb-lg-0">
-          <h1 className="my-5 display-3 fw-bold ls-tight">
+        <img className="card-img-top" src={loginlogo} alt="Card image cap" style={{"height":"28rem"}}/>
+          {/* <h1 className="my-5 display-3 fw-bold ls-tight">
             The best offer <br />
             <span className="change-span" style={{"color":"#DAAC78"}}>for your business</span>
           </h1>
@@ -21,7 +24,7 @@ const Login=()=>{
             
             quibusdam tempora at cupiditate quis eum maiores libero
             veritatis? Dicta facilis sint aliquid ipsum atque?
-          </p>
+          </p> */}
         </div>
 
         <div className="col-lg-6 mb-5 mb-lg-0">
@@ -44,10 +47,12 @@ const Login=()=>{
                     Subscribe to our newsletter
                   </label> */}
                 </div>
-
-                <button type="submit" className="btn btn-block mb-4" style={{"color":"#DAAC78"}}>
-                  Sign up
+                  <Link to="/landing">
+                  <button type="submit" className="btn btn-block mb-4" style={{"color":"#DAAC78"}}>
+                 Log In
                 </button>
+                  </Link>
+                
 
                 <div className="text-center">
                   {/* <p>or sign up with:</p> */}

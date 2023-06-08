@@ -27,14 +27,18 @@
 
 
 import React, { Component } from "react";
+import handshake from "../images/handshake.png";
+import {BrowserRouter, Route, Link } from "react-router-dom";
+
 export default class Signup extends Component {
     render() {
         return (
             <section>
-  <div className="px-4 py-5 px-md-5 text-center text-lg-start" style={{"background-color": "#fff"}}>
+  <div className="px-1 py-1 px-md-1 text-center text-lg-start" style={{"background": "70rem 40rem radial-gradient(50% 50% at 50% 50%, #DAAC79 0%, rgba(218, 172, 120, 0) 100%)"}}>
     <div className="container" >
       <div className="row gx-lg-5 align-items-center">
         <div className="col-lg-6 mb-5 mb-lg-0">
+            <img className="card-img-top" src={handshake} alt="Card image cap"/>
           {/* <h1 className="my-5 display-3 fw-bold ls-tight">
             The best offer <br />
             <span className="change-span" style={{"color":"#DAAC78"}}>for your business</span>
@@ -130,10 +134,12 @@ export default class Signup extends Component {
                     Subscribe to our newsletter
                   </label>
                 </div> */}
-
+                <Link to="/landing">
                 <button type="submit" className="btn  btn-block mb-4" style={{"padding-left":"4rem;background-color:#DAAC78"}}>
-                Sign up
+                Sign Up
                 </button>
+                </Link>
+                
 
                 <div className="text-center">
                   {/* <p>or sign up with:</p> */}
@@ -148,10 +154,12 @@ export default class Signup extends Component {
                   <button type="button" className="btn btn-link btn-floating mx-1">
                     <i className="fab fa-twitter"></i>
                   </button>
-
-                  <button type="button" className="btn btn-link btn-floating mx-1">
+                
+                <button type="button" className="btn btn-link btn-floating mx-1">
                     <i className="fab fa-github"></i>
                   </button>
+                
+                  
                 </div>
               </form>
             </div>
