@@ -4,13 +4,14 @@ import land1 from "../images/land1.png"
 import land22 from "../images/land22.png"
 import land33 from "../images/land33.png"
 import elderlink from "../images/elderlink-logo.png"
-import Navbar from "../components/Navbar"
+import NavbarA from "../components/NavbarA"
 import {BrowserRouter, Route, Link } from "react-router-dom";
 
 const Intro=()=>{
     return (
+        
         <div className="header-wraper" style={{"background": "radial-gradient(50% 50% at 50% 50%, #DAAC78 0%, rgba(218, 172, 120, 0) 100%)"}}>
-
+            <NavbarA />
             {/* <Navbar/> */}
     {/* <section classNameNameName="button-section">
         
@@ -42,16 +43,19 @@ const Intro=()=>{
     {/* <img src={{elderlink}}/> */}
     <div className="card-control" style={{"padding-top":"3rem"}}>
             <div className="card" style={{"width": "18rem"}}>
+            <Link to="/inter1">
   <img className="card-img-top" src={land1} alt="Card image cap" style={{"height":"40rem"}}/>
-
+    </Link>
 </div>
 <div className="card" style={{"width": "18rem"}}>
   <img className="card-img-top" src={land22} alt="Card image cap" style={{"height":"40rem"}}/>
 
 </div>
 <div className="card" style={{"width": "18rem"}}>
-  <img className="card-img-top" src={land33} alt="Card image cap"  style={{"height":"40rem"}}/>
-
+    <Link to="/inter2">
+    <img className="card-img-top" src={land33} alt="Card image cap"  style={{"height":"40rem"}}/>
+    </Link>
+  
 </div>
     </div>
     
